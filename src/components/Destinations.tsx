@@ -11,7 +11,7 @@ export default function Destinations() {
                     <div className="p-6">
                         <h3 className="text-xl font-semibold mb-2">Badrinath Dham</h3>
                         <p className="text-gray-600 text-sm mb-4 text-justify line-clamp-5">Badarinath is one of the holy shrines for Vaishnavites among the 108 divya desams incarnation of Lord Vishnu. Badrinath town is also the part of Panch Badri temples including Yog Dhyan Badri, Bhavishya Badri, Adi Badri and Vriddha Badri, along with Badrinath temple.</p>
-                        <button className="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Check Package</button>
+                        <button className="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-emerald-700 transition">View Details</button>
                     </div>
                 </div>
 
@@ -21,7 +21,7 @@ export default function Destinations() {
                     <div className="p-6">
                         <h3 className="text-xl font-semibold mb-2">Dwarka Dham</h3>
                         <p className="text-gray-600 text-sm mb-4 text-justify line-clamp-5">Dwarka Dham is a sacred Hindu pilgrimage town in the state of Gujarat, India, dedicated to Lord Krishna. The name "Dwarka" means "gateway to heaven," and it is considered one of the four Char Dhams (cardinal pilgrimage sites) that were established by the 8th-century philosopher Adi Shankara.</p>
-                        <button className="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Check Package</button>
+                        <button className="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-emerald-700 transition">View Details</button>
                     </div>
                 </div>
 
@@ -31,7 +31,7 @@ export default function Destinations() {
                     <div className="p-6">
                         <h3 className="text-xl font-semibold mb-2">Puri, Jagannath Temple</h3>
                         <p className="text-gray-600 text-sm mb-4 text-justify line-clamp-5">The Puri Jagannath Temple in Odisha is a highly revered Hindu temple dedicated to Lord Jagannath, a form of Lord Vishnu. It is a cornerstone of the Char Dham pilgrimage and is celebrated for its distinctive spiritual traditions and the annual Rath Yatra festival.</p>
-                        <button className="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Check Package</button>
+                        <button className="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-emerald-700 transition">View Details</button>
                     </div>
                 </div>
 
@@ -41,7 +41,7 @@ export default function Destinations() {
                     <div className="p-6">
                         <h3 className="text-xl font-semibold mb-2">Rameswaram Dham</h3>
                         <p className="text-gray-600 text-sm mb-4 text-justify line-clamp-5">Rameswaram is a vital pilgrimage site and one of the Char Dham circuits, honoring both Shaivite and Vaishnavite traditions. The Ramanathaswamy Temple houses one of the 12 Jyotirlingas, where Lord Rama is said to have worshipped Shiva. With its stunning architecture, longest temple corridor, and 22 sacred water wells, this destination offers a powerful spiritual experience. Begin your journey to salvation here, at the "Varanasi of the South"</p>
-                        <button className="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Check Package</button>
+                        <button className="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-emerald-700 transition">View Details</button>
                     </div>
                 </div>
             </div>
