@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import Destinations from "@/components/Destinations";
 import SpecialOffers from "@/components/SpecialOffers";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -23,7 +25,12 @@ export default function HomePage() {
 						complete support to make your spiritual journey memorable.
 					</p>
 
-					<button className="bottom-10 bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition z-10">Explore Destination</button>
+					{/* Explore All Button */}
+					<div className="flex justify-center mt-10">
+						<Link href="/destinations" className="bg-emerald-600 text-white px-6 py-3 rounded-full hover:bg-emerald-700 transition">
+							Explore All Destinations
+						</Link>
+					</div>
 				</div>
 			</div>
 

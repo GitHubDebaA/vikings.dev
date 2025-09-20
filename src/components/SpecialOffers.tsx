@@ -17,7 +17,7 @@ export default function SpecialOffers() {
                 {/* Offer Card */}
                 <div className="bg-white rounded-lg shadow-lg overflow-hidden">
                     <img
-                        src="/assets/destinations/badrinath.webp"
+                        src="/assets/destinations/placeholder.png"
                         alt="Badrinath Dham"
                         className="w-full h-48 object-cover"
                     />
