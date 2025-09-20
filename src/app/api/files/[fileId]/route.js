@@ -12,6 +12,7 @@ export async function GET(req, context) {
     // 🔹 Step 1: Check cache first
     if (imageCache.has(fileId)) {
         const cached = imageCache.get(fileId);
+        console.log('"File" -using cached data');
         return new Response(cached.buffer, {
             headers: {
                 "Content-Type": cached.contentType,
@@ -43,6 +44,7 @@ export async function GET(req, context) {
         contentType,
     });
 
+    console.log('"File" -fetched new data');
     return new Response(arrayBuffer, {
         headers: {
             "Content-Type": contentType,

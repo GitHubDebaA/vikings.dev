@@ -12,6 +12,7 @@ export async function GET() {
 
             // Optional: respect TTL
             if (Date.now() - cached.timestamp < 10 * 60 * 1000) { // 10 min
+                console.log('"Destinations" -using cached data');
                 return NextResponse.json({ success: true, data: cached.data });
             }
         }
@@ -25,6 +26,7 @@ export async function GET() {
             timestamp: Date.now(),
         });
 
+        console.log('"Destinations" -fetched new data');
         return NextResponse.json({ success: true, data });
     } catch (err) {
         console.log('server error', err);

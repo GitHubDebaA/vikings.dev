@@ -34,6 +34,7 @@ export default function Carousel({ children, className = "" }: CarouselProps) {
         if (!firstCard) return;
 
         const cardWidth = firstCard.offsetWidth + parseInt(getComputedStyle(firstCard).marginRight);
+        console.log('card width' + cardWidth);
 
         carousel.scrollBy({
             left: direction === "right" ? cardWidth : -cardWidth,

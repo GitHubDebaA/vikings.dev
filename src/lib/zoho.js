@@ -8,7 +8,19 @@ const {
     ZOHO_API_BASE,
 } = process.env;
 
+// cache vars (lives as long as your Node server process)
+let cachedToken = null;
+let tokenExpiry = 0; // timestamp in ms
+
 export async function __get_access_token__() {
+    const now = Date.now();
+
+    // ✅ reuse token if valid
+    if (cachedToken && now < tokenExpiry) {
+        console.log('"Token" -using cached token');
+        return cachedToken;
+    }
+
     const response = await axios.post(
         ZOHO_TOKEN_URL,
         null,
@@ -25,7 +37,14 @@ export async function __get_access_token__() {
         }
     );
 
-    return response.data.access_token;
+    const { access_token, expires_in } = response.data;
+
+    // cache it, refresh a bit before expiry
+    cachedToken = access_token;
+    tokenExpiry = now + (expires_in * 1000) - 60_000; // refresh 1 min early
+
+    console.log('"Token" -fetched new token');
+    return cachedToken;
 }
 
 export async function __fetch_destinations__() {
