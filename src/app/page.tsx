@@ -1,11 +1,12 @@
 import Link from "next/link";
 
-import Destinations from "@/components/Destinations";
+import FeaturedDestinations from "@/components/Destinations/FeaturedDestinations";
 import SpecialOffers from "@/components/SpecialOffers";
 import WhyChooseUs from "@/components/WhyChooseUs";
 import Testimonials from "@/components/Testimonials";
 import Gallery from "@/components/Gallery";
 import CallToAction from "@/components/CallToAction";
+import FeaturedResorts from "@/components/Destinations/FeaturedResorts";
 
 export default function HomePage() {
 	return (
@@ -35,10 +36,13 @@ export default function HomePage() {
 			</div>
 
 			{/* Featured Destination Section */}
-			<Destinations />
+			<FeaturedDestinations />
 
 			{/* Special Offers Section */}
 			<SpecialOffers />
+
+			{/* Featured Resorts Section */}
+			<FeaturedResorts />
 
 			{/* About Agency - Why Choose Us Section */}
 			<WhyChooseUs />

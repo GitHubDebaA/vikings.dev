@@ -3,9 +3,9 @@
 import Link from "next/link";
 import { useEffect, useState, } from "react";
 import { Destination, ApiResponse } from "@/types";
-import Carousel from "./utility/Carousel";
+import Carousel from "../utility/Carousel";
 
-export default function Destinations() {
+export default function FeaturedDestinations() {
     const [destinations, setDestinations] = useState<Destination[]>([]);
 
     useEffect(() => {

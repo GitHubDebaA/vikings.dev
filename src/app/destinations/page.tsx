@@ -1,4 +1,4 @@
-import Destinations from "@/components/Destinations";
+import Destinations from "@/components/Destinations/FeaturedDestinations";
 import DestinationHeroSection from "@/components/Destinations/HeroSection";
 import CallToAction from "@/components/CallToAction";
 
